@@ -1,0 +1,7 @@
+<form method="POST" action="/">
+    {{ form.csrf_token }}
+    {% for section in form._fields.values() %}
+        {{ section }}
+    {% endfor %}
+    <input type="submit" value="Go">
+</form>
